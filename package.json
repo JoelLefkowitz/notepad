@@ -11,5 +11,14 @@
     "devDependencies": {
     "dotenv": "^8.2.0",
     "yenv": "^2.1.1"
+  },
+  "portfolio": {
+    "project_type": "Published on npm",
+    "languages": ["Typescript"],
+    "frameworks": ["Angular"],
+    "paradigms": [
+      "Object oriented programming"
+    ],
+    "status": ["In development"]
   }
 }

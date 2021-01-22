@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 
 @Component({
-  selector: 'app-notepad',
+  selector: 'ng-notepad',
   templateUrl: './notepad.component.html',
   styleUrls: ['./notepad.component.css']
 })

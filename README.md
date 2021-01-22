@@ -1,4 +1,4 @@
-# Bar# notepad
+# notepad
 
 Notepad angular component
 
@@ -7,16 +7,34 @@ Notepad angular component
 | Source     | Shields                                                        |
 | ---------- | -------------------------------------------------------------- |
 | Project    | ![license][license] ![release][release]                        |
-| Publishers | [![pypi][pypi]][pypi_link]                                     |
-| Downloads  | ![pypi_downloads][pypi_downloads]                              |
+| Publishers | [![npm][npm]][npm_link]                                        |
+| Downloads  | ![npm_downloads][npm_downloads]                                |
 | Raised     | [![issues][issues]][issues_link] [![pulls][pulls]][pulls_link] |
 
-[license]: https://img.shields.io/github/license/joellefkowitz/notepad
-[release]: https://img.shields.io/github/v/tag/joellefkowitz/notepad
-[issues]: https://img.shields.io/github/issues/joellefkowitz/notepad "Issues"
-[issues_link]: https://github.com/JoelLefkowitz/notepad/issues
-[pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/notepad "Pull requests"
-[pulls_link]: https://github.com/JoelLefkowitz/notepad/pulls
+![Preview][preview]
+
+## Installing
+
+```bash
+npm i ng-notepad
+```
+
+## Usage
+
+```html
+<ng-notepad></ng-notepad>
+```
+
+Inputs:
+
+* width: number
+* height: number
+* submitButton: boolean
+
+Outputs:
+
+* (update) => string
+* (submit) => string
 
 ## Contributing
 
@@ -48,3 +66,14 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 None
+
+[preview]: https://github.com/JoelLefkowitz/notepad/raw/master/preview.png "Preview"
+[license]: https://img.shields.io/github/license/joellefkowitz/notepad
+[release]: https://img.shields.io/github/v/tag/joellefkowitz/notepad
+[issues]: https://img.shields.io/github/issues/joellefkowitz/notepad "Issues"
+[issues_link]: https://github.com/JoelLefkowitz/notepad/issues
+[pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/notepad "Pull requests"
+[pulls_link]: https://github.com/JoelLefkowitz/notepad/pulls
+[npm_downloads]: https://img.shields.io/npm/dw/ng-notepad
+[npm]: https://img.shields.io/npm/v/ng-notepad "npm"
+[npm_link]: https://npm.org/project/ng-notepad

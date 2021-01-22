@@ -1,0 +1,47 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "notepad": {
+      "projectType": "library",
+      "root": "projects/notepad",
+      "sourceRoot": "projects/notepad/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/notepad/tsconfig.lib.json",
+            "project": "projects/notepad/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/notepad/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/notepad/src/test.ts",
+            "tsConfig": "projects/notepad/tsconfig.spec.json",
+            "karmaConfig": "projects/notepad/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/notepad/tsconfig.lib.json",
+              "projects/notepad/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "notepad"
+}

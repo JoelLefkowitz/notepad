@@ -2,23 +2,67 @@
   "name": "notepad",
   "version": "0.1.0",
   "description": "Notepad angular component",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Joel Lefkowitz",
-  "license": "ISC",
-    "devDependencies": {
-    "dotenv": "^8.2.0",
-    "yenv": "^2.1.1"
-  },
   "portfolio": {
     "project_type": "Published on npm",
-    "languages": ["Typescript"],
-    "frameworks": ["Angular"],
+    "languages": [
+      "Typescript"
+    ],
+    "frameworks": [
+      "Angular"
+    ],
     "paradigms": [
       "Object oriented programming"
     ],
-    "status": ["In development"]
+    "status": [
+      "In development"
+    ]
+  },
+  "scripts": {
+    "lint": "npx eslint '-c' .eslintrc.yml './projects/{**/,}*.ts' --no-error-on-unmatched-pattern",
+    "format": "npx prettier './{**/*,*}.{js,ts,html,scss}' --write --loglevel error",
+    "test": "ng test",
+    "build": "ng build",
+    "pack": "npm pack ./dist/notepad"
+  },
+  "dependencies": {
+    "@angular/animations": "~10.0.11",
+    "@angular/cdk": "^10.2.7",
+    "@angular/common": "^10.0.14",
+    "@angular/compiler": "~10.0.11",
+    "@angular/core": "^10.0.14",
+    "@angular/forms": "^10.0.11",
+    "@angular/material": "^10.2.7",
+    "@angular/platform-browser-dynamic": "~10.0.11",
+    "@angular/platform-browser": "~10.0.11",
+    "@angular/router": "~10.0.11",
+    "rxjs": "~6.5.5",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.10.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1000.8",
+    "@angular-devkit/build-ng-packagr": "~0.1000.8",
+    "@angular/cli": "~10.0.7",
+    "@angular/compiler-cli": "~10.0.11",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "codelyzer": "^6.0.0",
+    "eslint": "^7.18.0",
+    "jasmine-core": "~3.5.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~5.0.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-jasmine": "~3.3.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^10.0.0",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~3.9.5"
   }
 }

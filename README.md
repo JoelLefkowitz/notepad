@@ -1,4 +1,4 @@
-# notepad
+# Bar# notepad
 
 Notepad angular component
 
@@ -13,58 +13,10 @@ Notepad angular component
 
 [license]: https://img.shields.io/github/license/joellefkowitz/notepad
 [release]: https://img.shields.io/github/v/tag/joellefkowitz/notepad
-[pypi]: https://img.shields.io/pypi/v/notepad "PyPi"
-[pypi_link]: https://pypi.org/project/notepad
-[python_version]: https://img.shields.io/pypi/pyversions/notepad
-[pypi_downloads]: https://img.shields.io/pypi/dw/notepad
 [issues]: https://img.shields.io/github/issues/joellefkowitz/notepad "Issues"
 [issues_link]: https://github.com/JoelLefkowitz/notepad/issues
 [pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/notepad "Pull requests"
 [pulls_link]: https://github.com/JoelLefkowitz/notepad/pulls
-
-### Installing
-
-Install the package from pypi:
-
-```bash
-pip install notepad
-```
-
-Alternatively, you can clone the repo:
-
-```bash
-git clone https://github.com/JoelLefkowitz/notepad
-```
-
-## Running tests
-
-Tests are not included in the package build. Clone the repo to include all the source files.
-
-```bash
-pytest tests
-```
-
-## Docs
-
-Docs are not included in the package build. Clone the repo to include all the source files.
-
-To automatically update the documentation generation configuration:
-
-```bash
-python setup.py updateDocs
-```
-
-Documentation can be generated locally:
-
-```bash
-python setup.py generateDocs
-```
-
-Then to view the generated docs visit ./build/sphinx/html/notepad/docs/modules.html:
-
-```bash
-open -a "Google Chrome" ./build/sphinx/html/notepad/docs/modules.html
-```
 
 ## Contributing
 

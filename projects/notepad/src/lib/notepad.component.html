@@ -1,0 +1,7 @@
+<div class="pad-container" [ngStyle]="{'width.px': width, 'height.px': height }" cdkDrag>
+    <div class="binding"></div>
+    <textarea [ngModel]="text" (ngModelChange)="textUpdate($event)" class="lines handwritting"></textarea>  
+    <button *ngIf="submitButton" (click)="textSubmit($event)" mat-icon-button rounded class="submit-button" aria-label="Send note">
+        <mat-icon>send</mat-icon>
+      </button>
+</div>

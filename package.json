@@ -2,29 +2,8 @@
   "name": "notepad",
   "version": "1.0.0",
   "description": "Notepad angular component",
+  "license": "MIT",
   "author": "Joel Lefkowitz",
-  "portfolio": {
-    "project_type": "Published on npm",
-    "languages": [
-      "Typescript"
-    ],
-    "frameworks": [
-      "Angular"
-    ],
-    "paradigms": [
-      "Object oriented programming"
-    ],
-    "status": [
-      "In development"
-    ]
-  },
-  "scripts": {
-    "lint": "npx eslint '-c' .eslintrc.yml './projects/{**/,}*.ts' --no-error-on-unmatched-pattern",
-    "format": "npx prettier './{**/*,*}.{js,ts,html,scss}' --write --loglevel error",
-    "test": "ng test",
-    "build": "ng build",
-    "pack": "npm pack ./dist/notepad"
-  },
   "dependencies": {
     "@angular/animations": "~10.0.11",
     "@angular/cdk": "^10.2.7",
@@ -52,6 +31,8 @@
     "@typescript-eslint/parser": "^4.14.0",
     "codelyzer": "^6.0.0",
     "eslint": "^7.18.0",
+    "grunt": "^1.3.0",
+    "grunt-cli": "^1.3.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.0.0",
@@ -64,5 +45,21 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
+  },
+  "portfolio": {
+    "project_type": "Npm package",
+    "homepage": "https://joellefkowitz-notepad.readthedocs.io",
+    "languages": [
+      "TypeScript"
+    ],
+    "frameworks": [
+      "Angular"
+    ],
+    "paradigms": [
+      "Object oriented programming"
+    ],
+    "status": [
+      "In development"
+    ]
   }
 }

@@ -1,0 +1,6 @@
+project: notepad
+version: 1.0.0
+author: Joel Lefkowitz
+verbose_name: Notepad
+html_title: Notepad
+github_url: JoelLefkowitz/notepad

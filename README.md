@@ -1,6 +1,6 @@
 # Notepad
 
-Notepad angular component
+An Angular notepad component.
 
 ## Status
 
@@ -30,14 +30,14 @@ npm install ng-notepad
 
 Inputs:
 
-* width: number
-* height: number
-* submitButton: boolean
+- width: number
+- height: number
+- submitButton: boolean
 
 Outputs:
 
-* (update) => string
-* (submit) => string
+- (update) => string
+- (submit) => string
 
 ## Tests
 

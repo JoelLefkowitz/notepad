@@ -1,11 +1,7 @@
 {
   "compileOnSave": false,
-  "files": [
-    "src/public-api.ts"
-  ],
-  "include": [
-    "src/**/*.d.ts"
-  ],
+  "files": ["src/public-api.ts"],
+  "include": ["src/**/*.d.ts"],
   "compilerOptions": {
     "baseUrl": "../",
     "outDir": "../../out-tsc",
@@ -17,15 +13,9 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "paths": {
-      "notepad": [
-        "dist/notepad/notepad",
-        "dist/notepad"
-      ]
+      "notepad": ["dist/notepad/notepad", "dist/notepad"]
     }
   }
 }

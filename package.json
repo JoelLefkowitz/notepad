@@ -1,7 +1,7 @@
 {
   "name": "notepad",
   "version": "1.0.0",
-  "description": "Notepad angular component",
+  "description": "An Angular notepad component.",
   "license": "MIT",
   "author": "Joel Lefkowitz",
   "dependencies": {
